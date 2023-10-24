@@ -23,7 +23,7 @@
   display: grid;
   grid-template-columns: repeat(4);
   grid-template-rows: repeat(3);
-  
+  grid-template-areas: 'one two three' 'one two three four' 'one two three four' 'fivegi';
 }
 
 .dateholder {
@@ -36,12 +36,15 @@
 
 .day {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  grid-area: one;
 }
 .month {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  grid-area: two;
 }
 .year  {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  grid-area: three;
 }
 
 .arrow {
@@ -62,6 +65,7 @@
   width: 25px;
   height: 23px;
   padding: 15px;
+  grid-area: four;
 }
 
 .dash {
@@ -82,4 +86,8 @@
   flex-direction: row;
   justify-content:flex-start;
   gap: 10px;
+}
+
+.dashandyears {
+  grid-area: five;
 }
