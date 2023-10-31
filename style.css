@@ -23,7 +23,7 @@
   display: grid;
   grid-template-columns: repeat(4);
   grid-template-rows: repeat(3);
-  grid-template-areas: 'one two three' 'one two three four' 'one two three four' 'fivegi';
+  grid-template-areas: 'one two' 'one two three four' 'one two three four' 'five';
 }
 
 .dateholder {
@@ -91,3 +91,4 @@
 .dashandyears {
   grid-area: five;
 }
+
